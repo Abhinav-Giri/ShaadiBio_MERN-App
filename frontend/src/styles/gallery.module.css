@@ -1,0 +1,17 @@
+.gallery{
+display:flex;
+gap:15px;
+/* overflow-x:auto; */
+}
+
+.card{
+padding:10px;
+background:white;
+border-radius:8px;
+cursor:pointer;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.selected{
+border:2px solid #ff4d6d;
+}

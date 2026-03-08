@@ -1,0 +1,24 @@
+body{
+font-family:Poppins;
+background:linear-gradient(135deg,#fff5f7,#f7faff);
+margin:0;
+}
+
+h1,h2,h3{
+color:#b3003c;
+}
+
+button{
+background:#ff4d6d;
+color:white;
+border:none;
+padding:10px 18px;
+border-radius:6px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+background:#e63956;
+}

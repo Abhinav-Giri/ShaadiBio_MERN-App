@@ -1,0 +1,129 @@
+/* ================= PAGE BACKGROUND ================= */
+
+.authPage{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+background:linear-gradient(135deg,#fff1f4,#f5f8ff);
+font-family:'Segoe UI',sans-serif;
+padding:20px;
+}
+
+/* ================= AUTH CARD ================= */
+
+.authCard{
+width:380px;
+background:white;
+border-radius:16px;
+padding:40px 35px;
+box-shadow:0 25px 60px rgba(0,0,0,0.12);
+display:flex;
+flex-direction:column;
+gap:18px;
+animation:fadeIn 0.35s ease;
+}
+
+/* ================= TITLE ================= */
+
+.authTitle{
+text-align:center;
+color:#b3003c;
+font-size:24px;
+font-weight:600;
+margin-bottom:5px;
+}
+
+/* ================= FORM ================= */
+
+.authForm{
+display:flex;
+flex-direction:column;
+gap:14px;
+}
+
+/* ================= INPUT ================= */
+
+.authInput{
+width:100%;
+padding:12px 14px;
+border-radius:8px;
+border:1px solid #ddd;
+font-size:14px;
+transition:all 0.25s ease;
+background:#fafafa;
+}
+
+.authInput:focus{
+outline:none;
+border-color:#ff4d6d;
+background:white;
+box-shadow:0 0 8px rgba(255,77,109,0.25);
+}
+
+/* ================= BUTTON ================= */
+
+.authButton{
+width:100%;
+padding:12px;
+border:none;
+background:#ff4d6d;
+color:white;
+border-radius:8px;
+cursor:pointer;
+font-size:15px;
+font-weight:500;
+transition:all 0.25s ease;
+}
+
+.authButton:hover{
+background:#e63956;
+transform:translateY(-1px);
+box-shadow:0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* ================= LINK ================= */
+
+.authLink{
+text-align:center;
+font-size:14px;
+margin-top:8px;
+}
+
+.authLink a{
+color:#ff4d6d;
+text-decoration:none;
+font-weight:500;
+}
+
+.authLink a:hover{
+text-decoration:underline;
+}
+
+/* ================= ANIMATION ================= */
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(10px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:480px){
+
+.authCard{
+width:100%;
+padding:30px 25px;
+}
+
+.authTitle{
+font-size:22px;
+}
+
+}

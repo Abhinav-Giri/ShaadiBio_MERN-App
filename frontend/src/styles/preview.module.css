@@ -1,0 +1,27 @@
+.previewContainer{
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.title{
+color:#b3003c;
+font-weight:600;
+}
+
+.preview{
+background:white;
+border-radius:12px;
+padding:25px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+min-height:450px;
+transition:all 0.3s ease;
+}
+
+@media(max-width:900px){
+
+.preview{
+min-height:350px;
+}
+
+}
