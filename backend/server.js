@@ -3,7 +3,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import connectDB from "./config/db.js";
 import errorHandler from "./middlewares/errorMiddleware.js";
-import notFound from "./middlewares/notFound.js";
+import notFound from "./middlewares/notFoundMiddleware.js";
 import authRoutes from "./routes/authRoutes.js";
 import biodataRoutes from "./routes/biodataRoutes.js";
 
