@@ -147,13 +147,14 @@ ShaadiBio
     └── vite.config.js
 
 🖥 Screenshots
+Register Page
+/screenshots/register
+
 Login Page
+/screenshots/login
 
 Biodata Builder
-
-Template Preview
-
-PDF Output
+/screenshots/builder
 
 ⚙ Installation Guide
 1️⃣ Clone Repository
