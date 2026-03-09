@@ -1,13 +1,7 @@
-import BuilderLayout from "../components/builder/BuilderLayout"
+import BuilderLayout from "../components/builder/BuilderLayout";
 
 const Builder = () => {
+  return <BuilderLayout />;
+};
 
-return (
-
-<BuilderLayout/>
-
-)
-
-}
-
-export default Builder
+export default Builder;
