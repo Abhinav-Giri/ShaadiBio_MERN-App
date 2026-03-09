@@ -77,6 +77,11 @@ const BuilderLayout = () => {
     pdf.save("ShaadiBio.pdf");
   };
 
+  const logout = () => {
+    localStorage.removeItem("token");
+    window.location.href = "/";
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.sidebar}>
@@ -96,13 +101,16 @@ const BuilderLayout = () => {
         <button className={styles.downloadBtn} onClick={downloadPDF}>
           Download PDF
         </button>
-      </div>
+       <button className={styles.logoutBtn} onClick={logout}>Logout</button>
 
+      </div>
+    
       <div className={styles.main}>
         <TemplateGallery template={template} setTemplate={setTemplate} />
 
         <PreviewPanel data={data} template={template} elements={elements} />
       </div>
+       
     </div>
   );
 };

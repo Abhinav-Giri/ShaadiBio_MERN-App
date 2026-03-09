@@ -34,5 +34,5 @@ min-height:420px;
 width:100%;
 max-width:850px;
 margin:auto;
-overflow:auto;
+overflow:visible;
 }
