@@ -15,7 +15,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(cors({
-  origin: "https://vercel.com/abhinavgiris-projects/shaadi-bio",
+  origin: "https://shaadi-bio-rose.vercel.app/",
   credentials: true
 }));
 app.use(express.json());
