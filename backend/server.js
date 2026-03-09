@@ -2,7 +2,8 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import connectDB from "./config/db.js";
-import { notFound, errorHandler } from "./middlewares/errorMiddleware.js";
+import errorHandler from "./middlewares/errorMiddleware.js";
+import notFound from "./middlewares/notFound.js";
 import authRoutes from "./routes/authRoutes.js";
 import biodataRoutes from "./routes/biodataRoutes.js";
 
