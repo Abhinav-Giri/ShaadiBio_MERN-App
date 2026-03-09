@@ -147,14 +147,15 @@ ShaadiBio
     └── vite.config.js
 
 🖥 Screenshots
-Register Page
-/screenshots/register
+## Login Page
+![Login Screenshot](screenshots/login.jpg)
 
-Login Page
-/screenshots/login
+## Register Page
+![Login Screenshot](screenshots/register.jpg)
 
-Biodata Builder
-/screenshots/builder
+<!-- ## Biodata Builder
+![Builder Screenshot](screenshots/builder.jpg) -->
+
 
 ⚙ Installation Guide
 1️⃣ Clone Repository
