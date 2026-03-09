@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 5000;
 
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://shaadi-bio-rose.vercel.app"
+  "https://shaadibio-one.vercel.app/"
 ];
 
 app.use(cors({
