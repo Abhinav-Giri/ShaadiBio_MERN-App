@@ -22,7 +22,13 @@ const Template1 = ({ data, isPremium }) => {
         <p>Height: {data.height}</p>
         <p>Profession: {data.profession}</p>
         <p>Religion: {data.religion}</p>
+        <h4>Education & Profession</h4>
 
+        <p>Education: {data.education}</p>
+        <p>College: {data.college}</p>
+        <p>Profession: {data.profession}</p>
+        <p>Company: {data.company}</p>
+        <p>Income: {data.income}</p>
         <h4>Family</h4>
         <p>Father: {data.father}</p>
         <p>Mother: {data.mother}</p>

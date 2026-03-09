@@ -7,7 +7,7 @@ import jsPDF from "jspdf";
 import PersonalSection from "../forms/PersonalSection";
 import FamilySection from "../forms/FamilySection";
 import HoroscopeSection from "../forms/HoroscopeSection";
-
+import EducationProfessionSection from "../forms/EducationProfessionSection";
 import PhotoUploader from "../upload/PhotoUploader";
 
 import { saveBiodata } from "../../api/biodataApi";
@@ -19,18 +19,27 @@ const BuilderLayout = () => {
 
   const [data, setData] = useState({
     name: "",
+    dob: "",
     age: "",
     height: "",
-    profession: "",
     religion: "",
+
+    education: "",
+    college: "",
+    profession: "",
+    company: "",
+    income: "",
+
     father: "",
     mother: "",
     siblings: "",
     nativePlace: "",
+
     rashi: "",
     nakshatra: "",
     gotra: "",
     manglik: "",
+
     photo: "",
   });
 
@@ -76,6 +85,7 @@ const BuilderLayout = () => {
         <PhotoUploader data={data} setData={setData} />
 
         <PersonalSection data={data} setData={setData} />
+        <EducationProfessionSection data={data} setData={setData} />
         <FamilySection data={data} setData={setData} />
         <HoroscopeSection data={data} setData={setData} />
 

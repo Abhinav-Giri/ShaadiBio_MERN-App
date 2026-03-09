@@ -1,32 +1,36 @@
-import styles from "../../styles/form.module.css"
+import styles from "../../styles/form.module.css";
 
-const PhotoUploader = ({data,setData}) => {
+const PhotoUploader = ({ data, setData }) => {
+  const handlePhoto = (e) => {
+    const file = e.target.files[0];
 
-const handleUpload = (e) => {
+    if (!file) return;
 
-const file = e.target.files[0]
+    const reader = new FileReader();
 
-const url = URL.createObjectURL(file)
+    reader.onloadend = () => {
+      setData({
+        ...data,
+        photo: reader.result,
+      });
+    };
 
-setData({...data,photo:url})
+    reader.readAsDataURL(file);
+  };
 
-}
+  return (
+    <div className={styles.photoBox}>
+      <img
+        className={styles.photo}
+        src={
+          data.photo || "https://cdn-icons-png.flaticon.com/512/149/149071.png"
+        }
+        alt="profile"
+      />
 
-return (
+      <input type="file" accept="image/*" onChange={handlePhoto} />
+    </div>
+  );
+};
 
-<div className={styles.photoBox}>
-
-<img
-src={data.photo || "/avatar.png"}
-className={styles.photo}
-/>
-
-<input type="file" onChange={handleUpload}/>
-
-</div>
-
-)
-
-}
-
-export default PhotoUploader
+export default PhotoUploader;

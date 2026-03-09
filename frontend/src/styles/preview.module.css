@@ -25,3 +25,14 @@ min-height:350px;
 }
 
 }
+.preview{
+background:white;
+border-radius:14px;
+padding:30px;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+min-height:420px;
+width:100%;
+max-width:850px;
+margin:auto;
+overflow:auto;
+}

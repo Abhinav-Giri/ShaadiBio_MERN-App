@@ -6,7 +6,9 @@ const Template2 = ({ data, isPremium }) => {
       {!isPremium && <div className={styles.watermark}>ShaadiBio</div>}
 
       <div className={styles.cardHeader}>
-        <img height="70px" width="70px"
+        <img
+          height="70px"
+          width="70px"
           src={
             data.photo ||
             "https://cdn-icons-png.flaticon.com/512/149/149071.png"
@@ -22,6 +24,13 @@ const Template2 = ({ data, isPremium }) => {
         <p>Height: {data.height}</p>
         <p>Profession: {data.profession}</p>
         <p>Religion: {data.religion}</p>
+        <h4>Education & Profession</h4>
+
+        <p>Education: {data.education}</p>
+        <p>College: {data.college}</p>
+        <p>Profession: {data.profession}</p>
+        <p>Company: {data.company}</p>
+        <p>Income: {data.income}</p>
 
         <h4>Family</h4>
         <p>Father: {data.father}</p>
