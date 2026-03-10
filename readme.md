@@ -85,13 +85,11 @@ html2canvas
 
 jsPDF
 
-💾 Save & Edit Biodata
+💾 Save & download Biodata
 
 Users can:
 
 Save biodata to database
-
-Edit previously saved biodata
 
 Load biodata automatically after login
 
@@ -153,8 +151,8 @@ ShaadiBio
 ## Register Page
 ![Login Screenshot](screenshots/register.jpg)
 
-<!-- ## Biodata Builder
-![Builder Screenshot](screenshots/builder.jpg) -->
+## Biodata Builder
+![Builder Screenshot](screenshots/bio-builder.jpg)
 
 
 ⚙ Installation Guide
